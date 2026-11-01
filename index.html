@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f52d5a" />
+  <meta name="description" content="Petshop Sophie — rações, acessórios e carinho para quem faz parte da família." />
+  <title>Petshop Sophie | Amor em cada patinha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Pacifico&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="announcement"><span>🐾</span> Seu pet merece todo esse carinho <span class="announcement-dot">•</span>
+    Peça pelo WhatsApp!</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Petshop Sophie — início"><img src="assets/logo.png"
+        alt="Logo Petshop Sophie" /><span class="brand-copy"><strong>Petshop</strong><em>Sophie</em></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav"><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a
+        href="#sobre">Sobre nós</a><a href="#contato">Contato</a></nav>
+    <button class="cart-button" id="openCart" aria-label="Abrir carrinho"><span class="cart-icon">🛒</span><span
+        class="cart-label">Meu carrinho</span><b id="cartCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy"><span class="eyebrow"><span>♥</span> FEITO COM AMOR PARA SEU PET</span>
+        <h1>Um mundo de carinho<br />para o seu <span>melhor amigo.</span></h1>
+        <p>Rações, acessórios e tudo o que deixa a vida do seu companheiro mais feliz. Escolha os favoritos e peça com
+          praticidade!</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#produtos">Ver produtos <span>→</span></a><a
+            class="btn btn-light" href="#sobre">Conheça a Sophie</a></div>
+        <div class="hero-trust"><span class="trust-avatars">🐶 🐱</span><span><strong>Amor em cada
+              pedido</strong><small>Atendimento próximo e atencioso</small></span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-blob"></div>
+        <div class="hero-paw paw-one">🐾</div>
+        <div class="hero-paw paw-two">♡</div><img class="hero-logo" src="assets/petcomp2.png"
+          alt="Mascote do Petshop Sophie: um gatinho e um cachorrinho felizes" />
+        <div class="floating-note"><span class="note-icon">♡</span><span><strong>Seu pet feliz</strong><small>é nossa
+              alegria!</small></span></div>
+      </div>
+      <div class="hero-bottom-wave"></div>
+    </section>
+
+    <section class="benefits" aria-label="Vantagens">
+      <div class="benefit"><span class="benefit-icon">🚚</span>
+        <div><strong>Entrega combinada</strong><small>Consulte nossa região</small></div>
+      </div>
+      <div class="benefit"><span class="benefit-icon">💗</span>
+        <div><strong>Escolhido com carinho</strong><small>Bem-estar em primeiro lugar</small></div>
+      </div>
+      <div class="benefit"><span class="benefit-icon">💬</span>
+        <div><strong>Pedido pelo WhatsApp</strong><small>Atendimento de verdade</small></div>
+      </div>
+      <div class="benefit"><span class="benefit-icon">🐾</span>
+        <div><strong>Para cães e gatos</strong><small>Amor para toda a família</small></div>
+      </div>
+    </section>
+
+    <section class="shop-section section-wrap" id="produtos">
+      <div class="section-heading">
+        <div><span class="eyebrow">NOSSA VITRINE</span>
+          <h2>Encontre o próximo <span>favorito</span></h2>
+          <p>Produtos selecionados para deixar seu pet ainda mais feliz.</p>
+        </div>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar produtos..."
+            aria-label="Buscar produtos" /></div>
+      </div>
+      <div class="shop-toolbar">
+        <div class="filters" role="group" aria-label="Filtrar por categoria"><button class="filter-chip active"
+            data-category="Todos">Todos</button><button class="filter-chip"
+            data-category="Rações">Rações</button><button class="filter-chip"
+            data-category="Acessórios">Acessórios</button><button class="filter-chip"
+            data-category="Brinquedos">Brinquedos</button><button class="filter-chip"
+            data-category="Higiene">Higiene</button></div><span class="product-total" id="productTotal">8
+          produtos</span>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="emptyState"><span>🐾</span>
+        <h3>Não encontramos esse produto</h3>
+        <p>Tente outro nome ou escolha uma categoria diferente.</p>
+      </div>
+    </section>
+
+    <section class="love-section" id="sobre">
+      <div class="love-art">
+        <div class="love-circle"><img src="assets/icone-pets.png" alt="Ilustração de um gato e um cachorro abraçados" />
+        </div><span class="love-heart heart-a">♥</span><span class="love-heart heart-b">✦</span>
+      </div>
+      <div class="love-copy"><span class="eyebrow">UM PETSHOP COM CORAÇÃO</span>
+        <h2>Mais do que produtos.<br /><span>Uma dose extra de amor.</span></h2>
+        <p>Na Petshop Sophie, cada patinha importa. Queremos ajudar você a encontrar os cuidados, a alimentação e os
+          acessórios que combinam com a personalidade do seu companheiro.</p>
+        <div class="love-points">
+          <div><span>✓</span> Atendimento acolhedor</div>
+          <div><span>✓</span> Produtos para cães e gatos</div>
+          <div><span>✓</span> Pedido simples e direto</div>
+        </div><a href="#contato" class="text-link">Fale com a gente <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contato">
+      <div class="cta-paw">🐾</div>
+      <div><span class="eyebrow">ESTAMOS AQUI PARA AJUDAR</span>
+        <h2>Vamos mimar seu pet hoje?</h2>
+        <p>Ficou com dúvida sobre um produto? Chame a gente no WhatsApp.</p>
+      </div><a class="btn btn-white" id="contactWhatsApp" href="#">Conversar no WhatsApp <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-brand" href="#inicio"><img src="assets/logo.png" alt="" /><span>Petshop
+        <em>Sophie</em></span></a>
+    <p>Feito com <span>♥</span> para quem ama os animais.</p><small>© <span id="year"></span> Petshop Sophie. Todos os
+      direitos reservados.</small>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras" aria-hidden="true">
+    <div class="cart-header">
+      <div><span class="eyebrow">SUA SACOLINHA</span>
+        <h2>Meu carrinho <span id="drawerCount">(0)</span></h2>
+      </div><button class="close-cart" id="closeCart" aria-label="Fechar carrinho">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>🛍️</span>
+      <h3>Seu carrinho está vazio</h3>
+      <p>Que tal escolher um mimo para seu pet?</p><button class="btn btn-primary" id="continueShopping">Ver
+        produtos</button>
+    </div>
+    <div class="cart-footer hidden" id="cartFooter">
+      <div class="cart-subtotal"><span>Subtotal estimado</span><strong id="cartSubtotal">R$ 0,00</strong></div>
+      <p>Entrega e disponibilidade serão confirmadas pelo vendedor no WhatsApp.</p><button
+        class="btn btn-primary checkout-button" id="checkoutButton">Finalizar pelo WhatsApp
+        <span>↗</span></button><small>Você poderá confirmar os detalhes do pedido antes de concluir.</small>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
